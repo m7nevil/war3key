@@ -41,7 +41,7 @@ def check_focused(name):
             keyboard.on_press_key('q', tap_num(7), True)
             keyboard.on_press_key('~', tap_num(8), True)
             keyboard.on_press_key('capslock', tap_num(4), True)
-            keyboard.on_press_key('left win', lambda: 0, True)
+            keyboard.on_press_key('left win', lambda e: 0, True)
             is_active = True
     else:
         keyboard.unhook_all()
